@@ -1,0 +1,1 @@
+let numberOfSquares = 16;
