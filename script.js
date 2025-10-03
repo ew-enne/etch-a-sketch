@@ -1,6 +1,6 @@
 let container = document.querySelector('.container');
 
-let squaresPerSide = 4;
+let squaresPerSide = 10;
 
 // create divs for the grid
 for (let i = 0; i < squaresPerSide; i++) {
@@ -14,3 +14,12 @@ for (let i = 0; i < squaresPerSide; i++) {
         column.classList.add("square-column");
     }
 }
+
+// create hover effect
+let square = document.querySelectorAll('.square-column');
+square.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('hover');
+    });
+});
+
